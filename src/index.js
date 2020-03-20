@@ -82,7 +82,6 @@ function generateRandomColors(num) {
   }
   return arr;
 }
-
 function randomColor() {
   var r = Math.floor(Math.random() * 256);
   var g = Math.floor(Math.random() * 256);
