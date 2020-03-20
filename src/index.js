@@ -1,12 +1,4 @@
-import "./styles.css";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
 var numSquares = 6;
 
 var colors = generateRandomColors(numSquares);
@@ -29,8 +21,12 @@ var h1 = document.querySelector("h1");
 
 for (var i = 0; i < modeBtn.length; i++) {
 
-modeBtn[i].addEventListener("click", function() {modeBtn[0].classList.remove("selected");modeBtn[1].classList.remove("selected");this.classList.add("selected");this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-reset();});
+modeBtn[i].addEventListener("click", function() {modeBtn[0].classList.remove("selected");
+modeBtn[1].classList.remove("selected");
+this.classList.add("selected");
+this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+reset();
+);
 }
 
 
